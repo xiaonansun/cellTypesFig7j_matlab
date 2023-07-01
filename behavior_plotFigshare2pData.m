@@ -14,9 +14,10 @@ for i = 1:length(bhvFilePathListStruct)
 bhvFilePathList{i} = fullfile(bhvFilePathListStruct(i).folder,bhvFilePathListStruct(i).name);
 end
 
-%%
+%% Plots behavior performance of individual sessions
 
 behavior_plotAllDiscCurves_RS(animal,bhvFilePathListStruct)
 
 %%
 bhv=behavior_LoadAllSessions_RS(animal,[],bhvFilePathListStruct);
+behavior_PlotPerformanceMatrix(animal,bhv);
