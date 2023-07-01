@@ -20,4 +20,4 @@ behavior_plotAllDiscCurves_RS(animal,bhvFilePathListStruct)
 
 %%
 bhv=behavior_LoadAllSessions_RS(animal,[],bhvFilePathListStruct);
-behavior_PlotPerformanceMatrix(animal,bhv);
+behavior_PlotPerformanceMatrix_RS(animal,bhv);
